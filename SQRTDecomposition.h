@@ -34,7 +34,7 @@ public:
     T Find(size_t i, size_t j) {
         T result = data[i];
 
-        size_t t = i;
+        size_t t = i + 1;
 
         while (t <= j) {
             if (t % size == 0 and t + size - 1 <= j) {
